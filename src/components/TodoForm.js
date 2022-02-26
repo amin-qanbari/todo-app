@@ -28,26 +28,26 @@ function TodoForm(props) {
       {props.edit ? (
         <>
           <input
-            placeholder="Update your item"
+            placeholder="آیتم های خود را تغییر دهید"
             value={input}
             name="text"
             className="todo-input edit"
             onChange={handleChange}
             ref={inputRef}
           />
-          <button className="todo-button edit" onClick={handleSubmit}>Update</button>
+          <button className="todo-button edit" onClick={handleSubmit}>به روز رسانی</button>
         </>
       ) : (
         <>
           <input
-            placeholder="Add a todo"
+            placeholder="اضافه کردن کارها"
             value={input}
             name="text"
             className="todo-input"
             onChange={handleChange}
             ref={inputRef}
           />
-          <button onClick={handleSubmit} className="todo-button">Add todo</button>
+          <button onClick={handleSubmit} className="todo-button">اضافه کردن</button>
         </>
       )}
     </form>
